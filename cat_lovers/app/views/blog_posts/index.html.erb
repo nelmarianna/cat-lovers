@@ -1,0 +1,13 @@
+
+<p class="single-post"><%= @blog_posts.size %> blog posts.</p>
+
+<% @blog_posts.each do |blog_post|%>
+
+<h2 class="post-title"><%= blog_post.title %></h2>
+
+<p class="post-body"><%= blog_post.body %></p>
+
+<a href="/blog_posts/<%= blog_post.id %>">View Full Post</a>
+
+<% end %>
+

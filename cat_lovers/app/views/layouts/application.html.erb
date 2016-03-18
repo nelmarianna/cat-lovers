@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nel Rocks</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="header">
+	<img src="/assets/cat-lovers.jpg" />
+
+	</div>
+	<div class="nav">
+		<ul>
+
+			<li><a href="/home">Home</a></li>
+			<li><a href="/blog_posts">Blog</a></li>
+			<li><a href="/about">about</a></li>
+			<li><a href="/contact">contact</a></li>
+		
+		</ul>
+	</div>
+
+	<div class= "content">
+		<%= yield %>
+	</div>
+
+</body>
+</html>
